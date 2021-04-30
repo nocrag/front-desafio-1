@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0px;
+}
+input, button, submit, label { 
+    border:none; 
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    display: block;
+
+} 
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    border-radius: 2px;
+}
+
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    height: 70px;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+    grid-area: navbar;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #545454;
+    text-align: center;
+    padding: 25px 20px;
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .topnav a:hover {
+    color: #FE0078;
+  }
+  
+  .topnav img {
+    padding: 10px;
+    margin-left: 60px;
+  }
+
+
+.grid-container {
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "card1 card1 card1 cardlateral"
+      "card1 card1 card1 cardlateral"
+      "comentarios comentarios comentarios cardlateral"
+      "comentarios comentarios comentarios cardlateral"
+      "footer footer footer footer";
+    justify-items: center;
+    margin-left: 100px;
+}
+.card1 { 
+  grid-area: card1; 
+  width: 900px;
+  height: 1300px;
+  background-color: #fff;
+  margin-top: 45px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+}
+.card1 img {
+    width: 900px;
+}
+.card1 h2 {
+    margin-left: 24px;
+    line-height: 50px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.card1 span {
+    margin-left: 24px;
+    font-size: 12px;
+    color: #929292;
+}
+.card1 p {
+    margin: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #545454;
+}
+.card1 img {
+    margin-top: 14px;
+}
+
+.comentarios { 
+    grid-area: comentarios; 
+    width: 900px;
+    height: 800px;
+  }
+
+.cardlateral { 
+  grid-area: cardlateral;
+  width: 500px;
+  height: 1396px;
+  background-color: #fff;
+  margin-top: 45px;
+  margin-right: 100px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+}
+
+.pesquisa {
+  border-radius: 10px;
+  border: 1px solid #EEEEEE;
+  width: 460px;
+  height: 52px;
+  margin: 20px;
+}
+input[type="text"]:hover {
+    border: 1px solid #FE0078;
+}
+input[type="text"]:focus {
+    border: 1px solid #FE0078;
+}
+input[type="email"]:hover {
+    border: 1px solid #FE0078;
+}
+input[type="email"]:focus {
+    border: 1px solid #FE0078;
+}
+textarea:hover {
+    border: 1px solid #FE0078;
+}
+textarea:focus {
+    border: 1px solid #FE0078;
+}
+.categoriaTitulo {
+    border-left: 3px solid #ff0000;
+    margin: 20px;
+  }
+.categoriaTitulo h2 {
+    margin: 10px;
+}  
+
+  .vertical-menu {
+    margin: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .vertical-menu a {
+    color: #545454;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 2px dotted #EEEEEE;
+  }
+  
+  .vertical-menu a:hover {
+    color: #FE0078;
+    border-bottom: 2px dotted #FE0078;
+  }
+  .vertical-menu span {
+    float: right;
+  }
+
+.publicidadeTitulo {
+  border-left: 3px solid #ff0000;
+  margin: 20px;
+  }
+.publicidadeTitulo h2 {
+  margin: 10px;
+}
+.publicidades img{
+  margin: 15px 80px;
+}
+
+
+
+.nome {
+    float: left;
+    margin-right: 50px;
+}
+.email {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.comentarios input{
+  background-color: #FFF;
+  width: 420px;
+    height: 45px;
+    border-radius: 2px;
+}
+.comentarios button {
+    float: right;
+    background-color: #FE0078;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    width: 93px;
+    height: 43px;
+    margin-top: 20px;
+  }
+
+footer {
+  grid-area: footer;
+  color: #fff;
+  background-color: #222222;
+  width:100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
